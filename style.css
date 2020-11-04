@@ -87,9 +87,13 @@ a {
 }
 
 .footer {
-    font-family: 'Cutive Mono', monospace;
-    font-size: 0.8rem;
+    font-family: 'Nothing You Could Do', cursive;
+    background-color: var(--white-color);
+    font-size: 1rem;
     color: var(--brown-color);
+    height: 3vh;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 1023px) {
