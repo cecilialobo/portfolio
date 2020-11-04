@@ -70,11 +70,12 @@ a {
     margin-left: 3rem;
 }
 
-.about-title {
+.heading {
     font-family: 'Nothing You Could Do', cursive;
     font-size: 3.5rem;
     color: var(--brown-color);
     margin: 2rem 4rem;
+    grid-area: heading;
 }
 
 .subtitle {
@@ -99,6 +100,25 @@ a {
     grid-area: img;
     place-self: center;
     margin-right: 10rem;
+}
+
+.cv-education, .cv-experience {
+    background-color: var(--white-color);
+    margin: 4rem;
+
+    display: grid;
+    grid-template-areas: "heading cv-content";
+}
+
+.cv-content {
+    grid-area: cv-content;
+}
+
+h4 {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.5rem;
+    color: var(--brown-color);
+    margin: 1rem 0 1rem 3rem; 
 }
 
 .footer {
