@@ -45,9 +45,9 @@ a {
 
 .frontend-title {
     font-family: 'Cutive Mono', monospace;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 100;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.3rem;
     margin: 3rem;
 }
 
@@ -57,24 +57,31 @@ a {
     bottom: 0;
 }
 
+.home-grid {
+    display: grid;
+    grid-template-areas: "section2 img";
+    grid-template-columns: 2fr 1fr;
+    height: 100vh;
+}
 .section2 {
-    /* display: none; */
-    height: 95.8vh;
     background-color: var(--white-color);
+    grid-area: section2;
+    place-self: center;
+    margin-left: 3rem;
 }
 
 .about-title {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--brown-color);
-    margin: 2rem;
+    margin: 2rem 4rem;
 }
 
 .subtitle {
     font-family: 'Cutive Mono', monospace;
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: var(--brown-color);
-    margin: 1rem 2rem;
+    margin: 1rem 0 1rem 3rem;
 }
 
 .text-p {
@@ -82,8 +89,16 @@ a {
     font-size: 1.3rem;
     text-align: justify;
     color: var(--brown-color);
-    margin: 1rem 2rem;
-    width: 50%;
+    margin: 1rem 0 1rem 3rem;
+    width: 70%;
+}
+
+.img {
+    width: 26vw;
+    height: 65vh;
+    grid-area: img;
+    place-self: center;
+    margin-right: 10rem;
 }
 
 .footer {
