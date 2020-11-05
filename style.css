@@ -51,10 +51,11 @@ a {
     margin: 3rem;
 }
 
-.fas {
+.fa-angle-down {
     font-size: 5rem;
     position: absolute;
     bottom: 0;
+    cursor: pointer;
 }
 
 .home-grid {
@@ -105,9 +106,12 @@ a {
 .cv-education, .cv-experience {
     background-color: var(--white-color);
     margin: 4rem;
-
     display: grid;
     grid-template-areas: "heading cv-content";
+}
+
+.cv-education {
+    margin-top: 0.5rem;
 }
 
 .cv-content {
@@ -124,11 +128,39 @@ h4 {
 .footer {
     font-family: 'Nothing You Could Do', cursive;
     background-color: var(--white-color);
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--brown-color);
     height: 3vh;
     display: flex;
     justify-content: center;
+    padding-bottom: 0.5rem;
+}
+
+.contact {
+    background-color: var(--pink-color);
+    height: 96vh;
+    padding-left: 3rem;
+}
+
+.social-icon {
+    float: left; 
+    font-size: 2.5rem;
+    padding: 0;
+}
+
+.fa-github-square {
+    margin-left: 3rem;
+}
+
+.footer-contact {
+    background-color: var(--pink-color);
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.2rem;
+    color: var(--brown-color);
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
 }
 
 @media (max-width: 1023px) {
