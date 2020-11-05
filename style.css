@@ -7,9 +7,12 @@
     --brown-color: #625240;
     --pink-color: #f5ebe5;
     --white-color: #fefffe;
+    --shadow: 1px 1px #ab8d6b;
 }
 .section1{
-    background-color: var(--pink-color);
+    /* background-color: var(--pink-color); */
+    background: rgb(245,235,229);
+    background: linear-gradient(90deg, rgba(245,235,229,1) 0%, rgba(237,212,212,1) 90%);
     height: 100vh;
     text-align: center;
     color: var(--brown-color);
@@ -25,7 +28,7 @@
 a {
     font-family: 'Cutive Mono', monospace;
     font-size: 1.2rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: var(--brown-color);
     display: inline-flex;
     align-items: center;
@@ -34,21 +37,32 @@ a {
     cursor: pointer;
     padding: 1rem; 
     margin-right: 1.5rem;
+    text-shadow: var(--shadow);
+}
+
+a:hover {
+    color: rgb(179, 131, 118);
 }
 
 .title {
     font-family: 'Nothing You Could Do', cursive;
     font-size: 6.5rem;
     font-weight: 100;
-    margin: 6rem auto 0 auto;
+    margin: 8rem auto 0 auto;
+    text-shadow: var(--shadow);
+    animation-name: start;
+    animation-duration: 2s;
 }
 
 .frontend-title {
     font-family: 'Cutive Mono', monospace;
     font-size: 1.6rem;
-    font-weight: 100;
+    /* font-weight: 100; */
+    font-weight: bold;
     letter-spacing: 0.3rem;
-    margin: 3rem;
+    margin: 4rem;
+    animation-name: start;
+    animation-duration: 2s;
 }
 
 .fa-angle-down {
@@ -56,6 +70,15 @@ a {
     position: absolute;
     bottom: 0;
     cursor: pointer;
+    text-shadow: var(--shadow);
+    transition-property: font-size;
+    transition-duration: 1s;
+}
+
+.fa-angle-down:hover {
+    /* padding-bottom: 0.5rem; */
+    font-size: 6rem;
+
 }
 
 .home-grid {
@@ -75,8 +98,9 @@ a {
     font-family: 'Nothing You Could Do', cursive;
     font-size: 3.5rem;
     color: var(--brown-color);
-    margin: 2rem 4rem;
+    margin: 1.6rem 4rem;
     grid-area: heading;
+    text-shadow: var(--shadow);
 }
 
 .subtitle {
@@ -88,11 +112,12 @@ a {
 
 .text-p {
     font-family: 'Cutive Mono', monospace;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: justify;
+    line-height: 1.6;
     color: var(--brown-color);
     margin: 1rem 0 1rem 3rem;
-    width: 70%;
+    width: 80%;
 }
 
 .img {
@@ -178,5 +203,15 @@ h4 {
 @media (max-width: 350px) {
     .title {
         font-size: 2.5rem;
+    }
+}
+
+
+@keyframes start {
+    0% {
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
     }
 }
